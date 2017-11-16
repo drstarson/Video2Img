@@ -8,21 +8,7 @@ sys.path.append('/usr/local/lib/python2.7/site-packages')
 
 import cv2
 import numpy as np
-import time
 import os
-
-#Checking the current working directory and creating a list with all the folders inside
-#Assumes there are only .py files and folders inside the CWD
-home_dir = os.getcwd()
-print ("CWD: " + home_dir)
-
-filelist = []
-
-for file in os.listdir(os.getcwd()):
-    if not file.endswith(".py"):
-        filelist += [file]
-
-print ("List of all files: " + str(filelist))
 
 # Function for extracting images from videos at fixed fps
 # This function expexts a video file (in .mp4 format) as an input
