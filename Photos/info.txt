@@ -1,0 +1,1 @@
+Images from parsed videos will be placed into this directory
