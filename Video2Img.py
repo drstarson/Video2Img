@@ -21,7 +21,7 @@ def apply_v2i(file):
         # vidcap.read() reads frames one by one from the file
         # for a 10 second video at 30 fps there are 300 total frames
         success, image = vidcap.read()
-        # for 30 fps, the approach below gives 2 images for every second.
+        # for 30 fps, the approach below gives 1 image for every second.
         if count == j_count * 30:
             j_count += 1
             img_file_name = str(file).replace(".mp4", "_") + "frame%d.jpg" % j_count
