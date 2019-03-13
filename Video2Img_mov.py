@@ -27,7 +27,7 @@ def apply_v2i(file):
         if count == j_count * 30:
             j_count += 1
             img_file_name = str(file).replace(
-                ".mov", "_") + "frame%d.jpg" % j_count
+                ".MOV", "_") + "%d.jpg" % j_count
             cv2.imwrite(img_file_name, image)  # save frame as JPEG file
             if os.path.getsize(img_file_name) > 0:
                 print ('Saved frame')
